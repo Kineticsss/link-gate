@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Access denied</title>
+  <link rel="stylesheet" href="warning.css">
+</head>
+<body>
+  <main>
+    <p class="status">Access denied</p>
+    <h1>This page was blocked because it looks unsafe.</h1>
+    <p>It contains <strong id="count">several</strong> links, which is at or above the limit of <strong id="threshold">8</strong>.</p>
+    <p class="url" id="url"></p>
+
+    <div class="actions">
+      <button id="close" class="primary">Close this page</button>
+      <button id="continue" class="danger">Continue anyway (unsafe)</button>
+    </div>
+    <p class="note">If you continue, you may be exposed to phishing, scams, or malicious downloads.</p>
+  </main>
+  <script src="warning.js"></script>
+</body>
+</html>

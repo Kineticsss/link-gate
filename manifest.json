@@ -1,0 +1,15 @@
+{
+  "manifest_version": 3,
+  "name": "Link Gate (8+ links demo)",
+  "version": "0.1.0",
+  "description": "Scans a link's destination before opening it and warns if it has 8 or more links.",
+  "host_permissions": ["<all_urls>"],
+  "background": { "service_worker": "background.js" },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"],
+      "run_at": "document_start"
+    }
+  ]
+}
